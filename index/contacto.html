@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de contacto</title>
+    <style>
+      body {
+        background-image: url(./imagen1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .contacto {
+        text-align: center;
+        padding: 10px;
+        color: rgb(184, 181, 181);
+        background-color: rgba(248, 244, 244, 0.178);
+      }
+      .main {
+        margin: 15px;
+      }
+      .footer {
+        text-align: center;
+        padding: px;
+        background-color: rgba(100, 99, 99, 0.589);
+      }
+      .h2 {
+        color: antiquewhite;
+      }
+      .form {
+        color: beige;
+      }
+      .volver {
+        background-position: center;
+        color: aliceblue;
+        background-color: rgb(34, 33, 33);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contacto">
+      <h1>Contacto</h1>
+    </div>
+    <div class="main">
+      <h2 class="h2">Formulario de Contacto</h2>
+      <form class="form" action="/submit_contact" method="post">
+        <label for="fname">Nombre:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Apellido:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="message">Mensaje:</label><br />
+        <textarea id="message" name="message"></textarea><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+    <div class="footer">
+      <footer class="footer">© 2023 Restaurantes S.L</footer>
+    </div>
+    <a class="volver" href="http://127.0.0.1:3000/index.html">VOLVER</a>
+  </body>
+</html>
